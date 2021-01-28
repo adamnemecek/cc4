@@ -11,8 +11,10 @@ const fn four_cc(cc: &[u8; 4]) -> u32 {
 }
 
 // #[cfg(test)]
+
 mod tests {
     use super::four_cc;
+    // from https://gist.github.com/rust-play/730673365471818b5bbbc876e65ffe40
     #[test]
     fn test_a_thing() {
         assert_eq!(0x68656963, four_cc(b"heic"));
